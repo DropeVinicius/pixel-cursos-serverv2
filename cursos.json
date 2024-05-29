@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "nome": "Entendendo Serviços Cloud",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    },
+    {
+        "id": "2",
+        "nome": "Azure developer",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    },
+    {
+        "id": "3",
+        "nome": "Guia Certificações Azure",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    },
+    {
+        "id": "4",
+        "nome": "Guia básico de Cloud",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    },
+    {
+        "id": "5",
+        "nome": "Código Limpo",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    },
+    {
+        "id": "6",
+        "nome": "AZ Fundamentals iniciantes",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    },
+    {
+        "id": "7",
+        "nome": "Conhecendo o Azure",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    },
+    {
+        "id": "8",
+        "nome": "Imersão Fundamentals",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    },
+    {
+        "id": "9",
+        "nome": "Imersão Azure",
+        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
+    }
+]
