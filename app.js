@@ -13,9 +13,14 @@ app.use('/cursos', rotaCurso);
 app.use('/favoritos', rotaFavorito);
 app.use('/player', rotaPlayer);
 
-const port = 8000
+// Servir arquivos estáticos do aplicativo React
+app.use(express.static(path.join(__dirname, '../client/build')));
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
+const port = process.env.PORT || 8000;
 app.listen(port, () => {
     console.log(`Escutando a porta ${port}`)
 });
