@@ -28,20 +28,5 @@
         "id": "6",
         "nome": "AZ Fundamentals iniciantes",
         "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
-    },
-    {
-        "id": "7",
-        "nome": "Conhecendo o Azure",
-        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
-    },
-    {
-        "id": "8",
-        "nome": "Imersão Fundamentals",
-        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
-    },
-    {
-        "id": "9",
-        "nome": "Imersão Azure",
-        "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
     }
 ]
