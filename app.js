@@ -7,7 +7,11 @@ const rotaFavorito = require("./rotas/favorito");
 const rotaPlayer = require("./rotas/player");
 
 app.use(express.json());
-app.use(cors({origin: "*"}));
+app.use(cors({ 
+    origin: "https://pixel-cursos.vercel.app/",
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
 
 app.use('/cursos', rotaCurso);
 app.use('/favoritos', rotaFavorito);
@@ -17,7 +21,7 @@ app.use('/player', rotaPlayer);
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    //res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 const port = process.env.PORT || 8000;
