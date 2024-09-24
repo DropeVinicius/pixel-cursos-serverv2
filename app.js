@@ -7,7 +7,10 @@ const rotaFavorito = require("./rotas/favorito");
 const rotaPlayer = require("./rotas/player");
 
 app.use(express.json());
-app.use(cors({ origin: "https://pixel-cursos.vercel.app/"}));
+app.use(cors({ origin: "https://pixel-cursos.vercel.app", // front end vercel
+                methods: ["GET", "POST", "PUT", "DELETE"], 
+                credentials: true // Cookies ou autenticação
+}));
 
 app.use('/cursos', rotaCurso);
 app.use('/favoritos', rotaFavorito);
