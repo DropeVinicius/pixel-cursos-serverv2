@@ -6,6 +6,8 @@ const rotaCurso = require("./rotas/curso");
 const rotaFavorito = require("./rotas/favorito");
 const rotaPlayer = require("./rotas/player");
 
+require("dotenv").config()
+
 app.use(express.json());
 app.use(cors({ origin: "https://pixel-cursos.vercel.app", // front end vercel
                 methods: ["GET", "POST", "PUT", "DELETE"], 
@@ -27,3 +29,5 @@ const port = process.env.PORT || 8000;
 app.listen(port, () => {
     console.log(`Escutando a porta ${port}`)
 });
+
+require("./database/connection")
