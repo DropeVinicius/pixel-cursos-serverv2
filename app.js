@@ -5,6 +5,8 @@ const cors = require("cors");
 const rotaCurso = require("./rotas/curso");
 const rotaFavorito = require("./rotas/favorito");
 const rotaPlayer = require("./rotas/player");
+const AuthRegisterUserRoutes = require("./rotas/AuthRegisterUserRoutes")
+const LoginRoutes = require("./rotas/LoginRoutes")
 
 require("dotenv").config()
 
@@ -17,6 +19,9 @@ app.use(cors({ origin: "https://pixel-cursos.vercel.app", // front end vercel
 app.use('/cursos', rotaCurso);
 app.use('/favoritos', rotaFavorito);
 app.use('/player', rotaPlayer);
+
+app.use('/', AuthRegisterUserRoutes)
+app.use(LoginRoutes)
 
 // Servir arquivos estáticos do aplicativo React
 app.use(express.static(path.join(__dirname, '../client/build')));
