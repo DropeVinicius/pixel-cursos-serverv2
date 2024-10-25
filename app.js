@@ -11,7 +11,8 @@ const LoginRoutes = require("./rotas/LoginRoutes")
 require("dotenv").config()
 
 app.use(express.json());
-app.use(cors({ origin: "https://pixel-cursos.vercel.app", // front end vercel
+app.use(cors({
+    origin: ["https://pixel-cursos.vercel.app", "https://pixelcursos.com.br"], // front end vercel
                 methods: ["GET", "POST", "PUT", "DELETE"], 
                 credentials: true // Cookies ou autenticação
 }));
